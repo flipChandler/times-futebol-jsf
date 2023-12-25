@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  postgres:
+    image: postgres
+    environment:
+      - POSTGRES_USER=felipe
+      - POSTGRES_PASSWORD=password
+    volumes:
+      - postgres:/data/postgres
+    ports:
+      - "5432:5432"
+
+volumes:
+  postgres:
+  pgadmin:
